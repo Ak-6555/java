@@ -1,5 +1,5 @@
 
-package BreakBangproject;
+package breakBangProject;
 
 
 import java.awt.Color;
@@ -26,7 +26,7 @@ public class Main {
         
         obj.add(gameplay);
         
-         ImageIcon icon = new ImageIcon("C:\\Users\\USER\\Pictures\\icon3.png");
+         ImageIcon icon = new ImageIcon("src/icon.png");
                obj.setIconImage(icon.getImage());     
                
                

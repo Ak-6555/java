@@ -1,5 +1,5 @@
 
-project BreakBangProject; 
+package breakBangProject; 
 
 import java.awt.BasicStroke;
 import java.awt.Color;

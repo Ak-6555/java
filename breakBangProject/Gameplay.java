@@ -116,29 +116,30 @@ public void moveLeft()
         {   
             if(new Rectangle(ballposX,ballposY,20,20).intersects(new Rectangle(playerX,550,100,8)))
             {
-                ballydir=ballydir-ballydir;
+                ballydir = (ballydir * -1);
                 
             }
-            
-            
-            ballposX=ballposX+ballxdir;
-            ballposY=ballposY+ballydir;
+
+			ballposX = ballposX + ballxdir;
+			ballposY = ballposY + ballydir;
+            System.out.println(ballposX + " " + ballposY + " " + ballxdir + " " + ballydir);
             if(ballposX < 0)
             {
-              ballxdir= ballxdir-ballxdir;
+//              ballxdir= ballxdir-ballxdir;
+              ballxdir = (ballxdir * -1);
              
             }
             if(ballposY < 0)
             {
-              ballydir= ballydir-ballydir;
+//              ballydir= ballydir-ballydir;
+              ballydir = (ballydir * -1);
              
             }
-            if(ballposX < 670)
+            if(ballposX > 670)
             {
-              ballxdir= ballxdir-ballxdir;
-             
+              ballxdir = (ballxdir * -1); 
             }
-            
+           
             
             
         }
