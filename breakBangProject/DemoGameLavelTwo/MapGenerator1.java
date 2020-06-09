@@ -1,5 +1,5 @@
 
-package DemoGameLavelTwo;
+package breakBangProject.DemoGameLavelTwo;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

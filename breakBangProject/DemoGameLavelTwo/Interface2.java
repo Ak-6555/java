@@ -1,4 +1,4 @@
-package DemoGameLavelTwo;
+package breakBangProject.DemoGameLavelTwo;
 
 
 
@@ -15,9 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import sun.audio.AudioPlayer;
-import sun.audio.AudioStream;
-
+import sun.audio.*;
 
 public class Interface2 extends JFrame implements ActionListener {
    
@@ -130,8 +128,8 @@ public class Interface2 extends JFrame implements ActionListener {
       try
       {
          music = new FileInputStream(new File(filepath));
-         AudioStream audios =new AudioStream(music);
-         AudioPlayer.player.start(audios);
+//         AudioStream audios =new AudioStream(music);
+//         AudioPlayer.player.start(audios);
 
      }
      catch(Exception e)
@@ -148,8 +146,8 @@ public class Interface2 extends JFrame implements ActionListener {
         if(btncontinue==e.getSource())
         {
            dispose();
-           Main2 letsplay =new Main2();
-           letsplay.setVisible(true);
+//           Main2 letsplay =new Main2();
+//           letsplay.setVisible(true);
            
         }
         else if(btnexit==e.getSource())
@@ -181,8 +179,8 @@ public class Interface2 extends JFrame implements ActionListener {
             ImageIcon mainicon = new ImageIcon("src/mainicon.jpg");
             JOptionPane.showMessageDialog(null, "Main Menu","Main Menu",1,mainicon);
             dispose();
-            Interface1 backframe= new  Interface1();
-            backframe.setVisible(true);
+//            Interface1 backframe= new  Interface1();
+//            backframe.setVisible(true);
              
             
         }
